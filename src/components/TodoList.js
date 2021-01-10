@@ -4,7 +4,7 @@ import Task from './Task';
 
 function TodoList() {
   const { tasks, deleteTask } = useContext(TodoContext);
-  console.log(tasks);
+
   return (
     <ul>
       {tasks &&
