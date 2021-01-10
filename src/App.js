@@ -1,7 +1,14 @@
-function App() {
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+
+const App = () => {
   return (
-    <h1>Hello from App</h1>
+    <div>
+      <h1>To-do List</h1>
+      <TodoForm />
+      <TodoList />
+    </div>
   );
-}
+};
 
 export default App;
