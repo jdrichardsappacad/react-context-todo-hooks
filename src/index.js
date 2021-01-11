@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import { TodoProvider } from './contexts/TodoContext';
 
-ReactDOM.render(
-  <React.StrictMode>
+const Root = () => {
+  return (
     <TodoProvider>
       <App />
     </TodoProvider>
+  );
+};
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
